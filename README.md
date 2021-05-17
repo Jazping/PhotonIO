@@ -167,3 +167,15 @@ complete the rest business.
 # Use case
 
 Only one use case that is neuro of Big-Bong block chain.
+
+# Epilogue
+<p>
+com.fusion.potonio.netty.server.PhotonServer & com.fusion.potonio.netty.client.PhotonClient respectively server and client entrance without ssl
+</p>
+<p>
+com.fusion.potonio.netty.server.SSLPhotonServer & com.fusion.potonio.netty.client.SSLPhotonClient respectively server and client entrance with ssl
+</p>
+<p>
+com.fusion.potonio.netty.client.DebugPhotonClient is client that jesting server steability, so that without hard disk writing
+</p>
+<p>hope you enjoy the photon io framework</p>
