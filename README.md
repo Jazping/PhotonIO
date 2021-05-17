@@ -71,25 +71,46 @@ It similar to server side, if only send commands, that should be without dispatc
 <p>
 Use to establish connection between tow point.
 </p>
+<p>
 ➢ dispatcher
+</p>
+<p>
 Use to distribute message to consumer
+</p>
+<p>
 ➢ connection
+</p>
+<p>
 When point-to-point bridge established, that will generate a connection whit an unique
 identification for manage them, every connection can set some properties in sessional
 communication. Generally, one client only has one connection retention for one point, be
 cause of NIO already take multipath reuse measure.
+</p>
+<p>
 ➢ buffer
+</p>
+<p>
 Buffer contain binary message lodged in memory temporarily, it can be allocate by virtual
 machine or direct in operation system. We recommend direct buffer on sending, heap buffer
 on reading. Besides, pooled them whatever type them is.
+</p>
+<p>
 ➢ buffer pool
+</p>
+<p>
 Buffer pool use to predestine quantitative buffers in memory, hence spare the time which
 entailed by buffer create and destroy. There are corresponding pools in different NIO
 intermediates, pools are also distinguished direct pool and heap pool.
+</p>
+<p>
 ➢ Consumer
+</p>
+<p>
 Consumer is developer defined message process procedure, always contain protocol uninstall
 and business process code. In generally, one consumer define by visual character sequence
 and register to dispatcher.
+</p>
+<p>
 It is hard to read constant range data packet from socket, thus incur one holistic packet may
 be reads several times. So it is hard to protocoled program in current exist technology, PIO
 judge data whether spliced through a status which respond by consumer, if data has been
@@ -99,18 +120,26 @@ proper to process big buffer at one time. Besides, consumer cannot submit execut
 one data packet is holistic. Framework offer basic consumer for connection establish, and
 consumer for file transmit. Also purvey ordinary file reading or writing method in client API.
 File transition has tow alternative basic protocol, they are TCP and UDP.
+</p>
+<p>
 To solve the packet losing situation, framework taken idempotent stream measure to ensure
 transition availability on UDP protocol. It’s mechanism is resend the fragment which has no
 response. Idempotent stream categorize file and byte array tow type. File idempotent
 stream for large file transmit, and byte array idempotent stream for small data transmit, this
 small data usual memorized.
+</p>
+<p>
 To solve memory overwhelm issue on transmit big file, PIO take transition relegate strategy.
 Framework delay one hundred milliseconds to continue the suspended transition if memory
 overflow on transmitting. Be cause of velocity of CPU more faster than network speed, that
 is often occur memory overflow on transmitting big file.
+</p>
+<p>
 Performance determine by network and disk writing ability, file transition will write some
 temporary file to disk. If low ability in network or disk, that will throw many data duplicated
 exception which will affect performance.
+</p>
+<p>
 Framework stipulate consumer development, purely develop consumer like developing
 controller in spring framework. Add Annotation on one class(including static) as consumer
 bean, and add mapping upon method to define one consumer, the method annotation
@@ -120,6 +149,7 @@ arguments, specialize parameters also can specify decoder for resolve the userva
 base on annotation developed consumer only require specify parameters order, no
 need concern primary parameters parsing. All of these final purpose just for easy, decent
 and graceful.
+</p>
 
 # Conduce
 
