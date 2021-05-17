@@ -10,9 +10,9 @@ Binary protocoled correspondence norm for netty.
 
 # Formulation
 
-◼ BIO is one blocking correspondence specification
-◼ NIO is one non-blocking multipath reused regulation
-◼ AIO is one call backed kind of NIO stipulation
+<p> BIO is one blocking correspondence specification</p>
+<p> NIO is one non-blocking multipath reused regulation</p>
+<p> AIO is one call backed kind of NIO stipulation</p>
 There is old to new corresponding technique from up to down, BIO as one synchronized
 widely applied correspondence regulation, ordinary requests are comply that norm, each
 request will blocking until the last request had responded. NIO deem multipath reused and
