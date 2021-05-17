@@ -9,11 +9,12 @@ mybe difficult to understand, so-called that just for java elite developer.
 <p>
 Binary protocoled correspondence norm for netty.
 </p>
+
 # Formulation
 
-<p> BIO is one blocking correspondence specification</p>
-<p> NIO is one non-blocking multipath reused regulation</p>
-<p> AIO is one call backed kind of NIO stipulation</p>
+<p><bold>BIO is one blocking correspondence specification</bold></p>
+<p><bold>NIO is one non-blocking multipath reused regulation</bold></p>
+<p><bold>AIO is one call backed kind of NIO stipulation</bold></p>
 
 <p>
 There is old to new corresponding technique from up to down, BIO as one synchronized
@@ -33,29 +34,43 @@ grope one efficient means to improve protocoled program is magnitude.
 </p>
 
 # Purpose
-
+<p>
 Intent to resolve packet’s tackiness, overlap or losing issues, provide an easy protocoled
 program environment, constitute efficient files transmit, chatting apps or message
 intermediates.
+</p>
 
 # The gist
-
+<p>
 Infrastructure constituted by server and client tow parts. Bilateral communication using a
 set of request connector, dispatcher, buffer and consumer to detach NIO&PIO. The
 connector obligation is establish connection with other server, dispatcher receive and
 administer the connection. Each connection will be allocate one unique identification when
 established. After handshake with other server, send binary protocoled message through
 connector, the message general as a buffer.
+</p>
 
+<p>
 ➢ server side
+</p>
+<p>
 It contain series of registered consumer and message dispatcher. First of all, resolve the
 protocol which cling by message from client, then distinguish message by them head and
 dispatch them to corresponding consumer prerequisite protocol knew by each other side. If
 the server supported dual orientation communication, it contain connector procedure too.
+</p>
+<p>
 ➢ client side
+</p>
+<p>
 It similar to server side, if only send commands, that should be without dispatcher.
+</p>
+<p>
 ➢ connector
+</p>
+<p>
 Use to establish connection between tow point.
+</p>
 ➢ dispatcher
 Use to distribute message to consumer
 ➢ connection
