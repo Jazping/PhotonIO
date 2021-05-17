@@ -1,28 +1,36 @@
-# prelude
-
+# Prelude
+<p>
 Today issue one corresponding framework of java for netty, my intent is try to enlighten or give some idea for java elite developer,
 how to constitude a efficent network transportation in protocoled form. the code is preparing, and with little comments on it therefore 
 mybe difficult to understand, so-called that just for java elite developer.
+</p>
 
 # PhotonIO
-
+<p>
 Binary protocoled correspondence norm for netty.
-
+</p>
 # Formulation
 
 <p> BIO is one blocking correspondence specification</p>
 <p> NIO is one non-blocking multipath reused regulation</p>
 <p> AIO is one call backed kind of NIO stipulation</p>
+
+<p>
 There is old to new corresponding technique from up to down, BIO as one synchronized
 widely applied correspondence regulation, ordinary requests are comply that norm, each
 request will blocking until the last request had responded. NIO deem multipath reused and
 running paralleled postulate that all requests has no correlation each other. AIO base on NIO
 and ameliorated that allowed call back procession according with response through future.
+</p>
+<p>
 Netty is one high performant NIO kind correspondence framework, already sealed some
 general protocol like http2 decoder. Of course, newly version support AIO rules.
+</p>
+<p>
 It is necessary to explore some flexible protocoled program develop framework, although
 these are not the significant innovation. But http-base application is insufficient after all,
 grope one efficient means to improve protocoled program is magnitude.
+</p>
 
 # Purpose
 
