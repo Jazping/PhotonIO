@@ -1,7 +1,7 @@
 # Prelude
 <p>
 Today issue one corresponding framework of java for netty, my intent is try to enlighten or give some idea for java elite developer,
-how to constitude a efficent network transportation in protocoled form. the code is preparing, and with little comments on it therefore 
+how to constitude a efficent network transportation in protocoled form. the code with little comments on it therefore 
 mybe difficult to understand, so-called that just for java elite developer.
 </p>
 
